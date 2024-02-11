@@ -9,7 +9,7 @@ stepping:
   disable_delay_us: 0
 
 axes:
-  shared_stepper_disable_pin: gpio.13:low
+  shared_stepper_disable_pin: gpio.13:high
   
   x:
     steps_per_mm: 800
@@ -19,7 +19,7 @@ axes:
     homing:
       cycle: 2
       mpos_mm: 10
-      positive_direction: false
+      positive_direction: true
     
     motor0:
       limit_all_pin: gpio.17:low:pu
@@ -37,7 +37,7 @@ axes:
     homing:
       cycle: 2
       mpos_mm: 10
-      positive_direction: false
+      positive_direction: true
 
     motor0:
       limit_all_pin: gpio.4:low:pu
@@ -55,7 +55,7 @@ axes:
     homing:
       cycle: 1
       mpos_mm: 10
-      positive_direction: true
+      positive_direction: false
 
     motor0:
       limit_all_pin: gpio.16:low:pu
